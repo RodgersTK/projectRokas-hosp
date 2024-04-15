@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rokas hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Start navbar-->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./images/hosp logo.jpg" class="h-8" alt="Rokas Logos" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Rokas Hosp</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Mission</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Vision</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End navbar-->
+
+    <!--Beginning of body-->
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-gray-200 p-4">
+        <img src="./images/hosp2.webp" alt="RokasHosp" />
+        <form class="my-6" id="search-form">
+          <label for="search-input">Search by name:</label>
+          <input
+            type="text"
+            id="search-input"
+            name="search"
+            placeholder="Enter name..."
+          />
+          <button type="submit">Search</button>
+        </form>
+        <table id="patient-table" class="border-collapse w-full">
+          <thead>
+            <tr>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">ID</th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">Name</th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">
+                Identity
+              </th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">Age</th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">
+                Gender
+              </th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">
+                Notes
+              </th>
+              <th class="bg-gray-200 border border-gray-300 py-2 px-4">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody id="patient-table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="bg-gray-300 p-4">
+        <!--Form for an existing patient-->
+        <div class="max-w-lg mx-auto mt-8">
+          <form
+            id="formOne"
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="search-patient-name"
+              >
+                Patient Name
+              </label>
+              <input
+                id="search-patient-name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Patient Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="search-patient-id"
+              >
+                Patient Id / Birth Cert No
+              </label>
+              <input
+                id="search-patient-id"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Identification"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="patient-notes"
+              >
+                Patient History
+              </label>
+              <textarea
+                id="patient-notes"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Patient history"
+              ></textarea>
+            </div>
+
+            <button
+              id="new-patient-button"
+              type="button"
+              class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              New Patient
+            </button>
+          </form>
+        </div>
+        <!--End of an existing patient-->
+
+        <!--Form for a new patient-->
+        <div
+          id="new-patient-toogler"
+          style="display: none"
+          class="max-w-lg mx-auto mt-8"
+        >
+          <form
+            id="formTwo"
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="flex items-center justify-between">
+              <button
+                id="save-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--End of Form for a new patient-->
+
+        <!--Adding an update button-->
+        <div
+          id="update-patient-toogler"
+          style="display: none"
+          class="max-w-lg mx-auto mt-8"
+        >
+          <form
+            id="update-form"
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
+            <input id="patientId" type="hidden" />
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="patientName"
+              >
+                Patient Name
+              </label>
+              <input
+                id="patientName"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Patient Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="patientAge"
+              >
+                Patient Age
+              </label>
+              <input
+                id="patientAge"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Patient Age"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="identity"
+              >
+                Patient Id / Birth Cert No
+              </label>
+              <input
+                id="identity"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Patient Id"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="patienGender"
+              >
+                Patient Gender
+              </label>
+              <select
+                id="patienGender"
+                class="block appearance-none w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              >
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="patientNotes"
+              >
+                Patient Notes
+              </label>
+              <textarea
+                id="patientNotes"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Patient Notes"
+              ></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                id="update-button"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--End of the update form-->
+      </div>
+    </div>
+
+    <!--End of body-->
+
+    <!--javascript link-->
+    <script src="./script.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+{
+  "patients": [
+    {
+      "name": "Alex Ondieki2",
+      "age": "45",
+      "id": "3",
+      "identity": "31019459",
+      "gender": "Male",
+      "notes": "Patient visited for a routine check-up. No issues reported."
+    },
+    {
+      "id": "4",
+      "name": "Emily Chebet",
+      "identity": "31710459",
+      "age": 56,
+      "gender": "Female",
+      "notes": "Patient underwent knee surgery. Follow-up appointment scheduled for next week."
+    },
+    {
+      "id": "6",
+      "name": "Grace Wanja",
+      "identity": "31010429",
+      "age": 22,
+      "gender": "Female",
+      "notes": "Patient vommiting and feeling weak. Pregnancy test conducted, Tested positive."
+    },
+    {
+      "id": "d66e",
+      "name": "Collins",
+      "identity": "97639469",
+      "age": "20",
+      "gender": "Male",
+      "notes": "Feeling okay"
+    },
+    {
+      "id": "e805",
+      "name": "Collins",
+      "identity": "46474",
+      "age": "27",
+      "gender": "Male",
+      "notes": "Patient complained of back pain. Prescribed painkillers and advised rest."
+    },
+    {
+      "id": "6372",
+      "name": "Derrik",
+      "identity": "97639469",
+      "age": "30",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "9658",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "52cc",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "06fc",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "4a45",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "edc2",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "05bd",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "b786",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Complaining of soar throat"
+    },
+    {
+      "id": "484c",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Complaining of soar throat"
+    },
+    {
+      "id": "cfc0",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Complaining of soar throat"
+    },
+    {
+      "id": "fa73",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "76b7",
+      "name": "Jane Wangui",
+      "identity": "7438937",
+      "age": "49",
+      "gender": "Female",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "050a",
+      "name": "Precious ",
+      "identity": "23483245",
+      "age": "34",
+      "gender": "Female",
+      "notes": ""
+    },
+    {
+      "id": "054e",
+      "name": "Shitiambai",
+      "identity": "6434882",
+      "age": "25",
+      "gender": "Male",
+      "notes": "Feeling nausea and uneasy. "
+    },
+    {
+      "id": "074e",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "ea93",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "f00c",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "0157",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "b4ac",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": "Patient complained of back pain. Prescribed painkillers and advised rest."
+    },
+    {
+      "id": "a826",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "c2cb",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": "Patient complained of back pain. Prescribed painkillers and advised rest."
+    },
+    {
+      "id": "09f8",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "36f9",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "8361",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "1d6d",
+      "name": "martin",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "7183",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "7469",
+      "name": "faith",
+      "identity": "2357282",
+      "age": "21",
+      "gender": "Female",
+      "notes": ""
+    },
+    {
+      "id": "6832",
+      "name": "faith",
+      "identity": "2357282",
+      "age": "21",
+      "gender": "Female",
+      "notes": ""
+    },
+    {
+      "id": "7ce2",
+      "name": "faith",
+      "identity": "2357282",
+      "age": "21",
+      "gender": "Female",
+      "notes": ""
+    },
+    {
+      "id": "d707",
+      "name": "faith",
+      "identity": "2357282",
+      "age": "21",
+      "gender": "Female",
+      "notes": ""
+    },
+    {
+      "id": "eab9",
+      "name": "Sarah",
+      "identity": "46474",
+      "age": "27",
+      "gender": "Female",
+      "notes": "Patient complained of back pain. Prescribed painkillers and advised rest."
+    },
+    {
+      "id": "73a4",
+      "name": "John Mumo",
+      "identity": "6349826",
+      "age": "47",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "fbf1",
+      "name": "Junnet",
+      "identity": "964329",
+      "age": "20",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "d08f",
+      "name": "Kelvin Fundi",
+      "identity": "10368",
+      "age": "30",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "9b41",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "86e3",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "473e",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    },
+    {
+      "id": "5b2f",
+      "name": "",
+      "identity": "",
+      "age": "",
+      "gender": "Male",
+      "notes": ""
+    }
+  ]
+}
